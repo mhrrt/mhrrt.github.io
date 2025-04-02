@@ -1,0 +1,32 @@
+@import "{{ site.theme }}";
+
+pre {
+  background-color: #f6f8fa;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+pre code {
+  font-family: "Courier New", monospace;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+}
+
