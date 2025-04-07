@@ -45,7 +45,7 @@ Once the app is created, AdMob will give you Success meaage.
 ✅ 6: Create Ad Unit
 Click "Add Ad Unit".
 Choose the ad format: Banner, Interstitial, Rewarded, etc.
-![Add Ad Unit](/assets/images/AdMobStep5.jpeg)
+![Add Ad Unit](/assets/images/AdMobStep5.jpg)
 ![Select format, for now Banner](/assets/images/AdMobStep6.jpg)
 
 ✅ 7: Configure the Ad Unit
@@ -63,9 +63,15 @@ Now back to React Native Part
 ## Step 1: Install Dependencies
 Run the following command:
 
-<pre><code>npm install react-native-google-mobile-ads@13.3.1</code></pre>
+<div class="code-container">
+<pre><code> npm install react-native-google-mobile-ads@13.3.1 </code></pre>
+<button class="edit-btn">Edit</button>
+  <button class="copy-btn">Copy</button>
+</div>
 
-Note: I struggle a lot with other version of SDK for Android so keep version for SDK as @13.3.1 for now.
+Note: I struggle a lot with other version of SDK for Android so keep version for SDK as @13.3.1 for now. You can cross check installed version of sdk like;
+
+<pre><code> npm list react-native-google-mobile-ads </code></pre>
 
 Next, link the package:
 
@@ -153,6 +159,14 @@ Finally you will either get Ad on your simulator or it will show reason in conso
 
 # For iOS:
 <pre><code> npx react-native log-ios </code></pre>
+
+# Conclusion:
+If all steps are followed above you will be able to see TestAd on simulator/device as below.
+
+<p align="center">
+  <img src="/assets/images/RamShalakaAdMob.jpg" alt="Andorid Admob Test-Ad" />
+</p>
+
 
 # Note: 
 Other versions of Admob SDK were giving compilation error on Android so i explicitly stick to 13.3.1. 
