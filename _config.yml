@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: React-native-admob-integration For iOS and Android
+title: React-native-admob-integration
 email: manishhtrivedi@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Learn how to integrate AdMob into your React Native app for iOS and Android without build issues. This step-by-step guide ensures a smooth setup, resolving common Android errors for seamless ad monetization.
@@ -27,13 +27,19 @@ url: "" # the base hostname & protocol for your site, e.g. https://github.com/mh
 twitter_username: mhrrt
 github_username:  mhrrt
 
+markdown: kramdown
+highlighter: rouge
+
+
 # Build settings
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
-markdown: kramdown
-highlighter: rouge
+
+# /2025/03/29/react-native-admob-integration
+# 2025-03-29-react-native-admob-integration
+#permalink: /:year/:month/:day/:title.html
 
 sass:
   sass_dir: _sass
