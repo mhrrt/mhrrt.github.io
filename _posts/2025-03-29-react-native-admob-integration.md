@@ -31,32 +31,33 @@ Click the "Add App" button.
 Select iOS or Android, depending on your app.
 Choose "Yes" if your app is published on the Play Store/App Store, or "No" if it isn't.
 Click Continue.
-![Select Platform and published status of apps](/assets/images/AdMobStep2.jpg)
+
+![Select Platform and published status of apps]({{ site.baseurl }}/assets/images/AdMobStep2.jpg)
 
 ✅ 4: Enter App Details
 Enter your App name.
 Click Add App.
-![Add App Name](/assets/images/AdMobStep3.jpg)
+![Add App Name]({{ site.baseurl }}/assets/images/AdMobStep3.jpg)
 
 ✅ 5: Click Done
 Once the app is created, AdMob will give you Success meaage.
-![Successfully added message](/assets/images/AdMobStep4.jpg)
+![Successfully added message]({{ site.baseurl }}/assets/images/AdMobStep4.jpg)
 
 ✅ 6: Create Ad Unit
 Click "Add Ad Unit".
 Choose the ad format: Banner, Interstitial, Rewarded, etc.
-![Add Ad Unit](/assets/images/AdMobStep5.jpg)
-![Select format, for now Banner](/assets/images/AdMobStep6.jpg)
+![Add Ad Unit]({{ site.baseurl }}/assets/images/AdMobStep5.jpg)
+![Select format, for now Banner]({{ site.baseurl }}/assets/images/AdMobStep6.jpg)
 
 ✅ 7: Configure the Ad Unit
 Name your Ad Unit.
 Click Create Ad Unit.
-![Name your Banner Ad Unit](/assets/images/AdMobStep7.jpg)
+![Name your Banner Ad Unit]({{ site.baseurl }}/assets/images/AdMobStep7.jpg)
 
 ✅ 8: Copy Ad Unit ID
 You’ll now see your Ad Unit ID.
 Copy this — you’ll use it in your app where ads are displayed.
-![Copy Ad Unit thats been shown](/assets/images/AdMobStep8.jpg)
+![Copy Ad Unit thats been shown]({{ site.baseurl }}/assets/images/AdMobStep8.jpg)
 
 Now back to React Native Part
 
@@ -164,7 +165,7 @@ Finally you will either get Ad on your simulator or it will show reason in conso
 If all steps are followed above you will be able to see TestAd on simulator/device as below.
 
 <p align="center">
-  <img src="/assets/images/RamShalakaAdMob.jpg" alt="Andorid Admob Test-Ad" />
+  <img src="{{ site.baseurl }}/assets/images/RamShalakaAdMob.jpg" alt="Andorid Admob Test-Ad" />
 </p>
 
 
