@@ -27,7 +27,8 @@ url: "" # the base hostname & protocol for your site, e.g. https://github.com/mh
 twitter_username: mhrrt
 github_username:  mhrrt
 
-baseurl: "/react-native-admob-integration"
+#baseurl: "/react-native-admob-integration"
+baseurl: ""
 markdown: kramdown
 highlighter: rouge
 
