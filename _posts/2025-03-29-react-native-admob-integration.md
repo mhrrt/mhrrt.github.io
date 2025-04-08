@@ -129,9 +129,11 @@ const App = () => {
           console.log('Ad Failed to Load',error.message,error.name);
 
         }}
+        {% raw %}
         requestOptions = {{ 
           requestNonPersonalizedAdsOnly: true
            }}/>
+           {% endraw %}
     </View>
   );
 };
