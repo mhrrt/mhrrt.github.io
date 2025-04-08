@@ -129,7 +129,7 @@ const App = () => {
           console.log('Ad Failed to Load',error.message,error.name);
 
         }}
-        requestOptions={{
+        requestOptions = {{
               requestNonPersonalizedAdsOnly: true,
         }}
       />
