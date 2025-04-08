@@ -129,9 +129,7 @@ const App = () => {
           console.log('Ad Failed to Load',error.message,error.name);
 
         }}
-        requestOptions = {{
-              requestNonPersonalizedAdsOnly: true,
-        }}
+        requestOptions = {{ requestNonPersonalizedAdsOnly: true, }}
       />
     </View>
   );
