@@ -130,7 +130,7 @@ const App = () => {
 
         }}
         requestOptions={{
-        requestNonPersonalizedAdsOnly: true
+              requestNonPersonalizedAdsOnly: true,
         }}
       />
     </View>
