@@ -221,3 +221,8 @@ class ViewController: UIViewController {
 That’s how you can make you wrapper usable across multiple apps.
 
 *Originally published at* [*https://mhrrt.github.io*](https://mhrrt.github.io/SwiftPackageLanguageTranslation/)*.*
+
+<iframe>
+<a href="https://www.amazon.com/gp/movers-and-shakers/ref=zg_bs_tab_bsms?tag=mhrrt-20" target="_blank">
+  <img src="https://www.amazon.com/ref=nav_logo" alt="Amazon Best Seller" />
+</a></iframe>
