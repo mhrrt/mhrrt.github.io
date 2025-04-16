@@ -13,9 +13,12 @@ Google AdMob allows you to monetize your mobile apps by displaying ads. In this 
 
 ### Prerequisites
 
-*   Node.js installed
-*   React Native CLI installed
-*   Firebase account (for AdMob setup)
+* Node.js installed
+    
+* React Native CLI installed
+    
+* Firebase account (for AdMob setup)
+    
 
 I am considering you already have Node.js, React Native CLI installed in your system, so lets start with creating Admob AdUnitID
 
@@ -27,25 +30,25 @@ I am considering you already have Node.js, React Native CLI installed in your sy
 
 ✅ 4: Enter App Details Enter your App name. Click Add App.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791579290/1fbd5a8b-45fd-4a53-92d9-4ca7315a7844.jpeg)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791579290/1fbd5a8b-45fd-4a53-92d9-4ca7315a7844.jpeg align="left")
 
 ✅ 5: Click Done Once the app is created, AdMob will give you Success meaage.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791581202/9658ab80-a6bf-4c42-8b63-31e5ca9b9102.jpeg)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791581202/9658ab80-a6bf-4c42-8b63-31e5ca9b9102.jpeg align="left")
 
 ✅ 6: Create Ad Unit Click “Add Ad Unit”. Choose the ad format: Banner, Interstitial, Rewarded, etc.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791582518/251fa71b-0830-4ff6-a441-59362abf0559.jpeg)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791582518/251fa71b-0830-4ff6-a441-59362abf0559.jpeg align="left")
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791584120/a2078376-6436-4191-bd31-f8f895549271.jpeg)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791584120/a2078376-6436-4191-bd31-f8f895549271.jpeg align="left")
 
 ✅ 7: Configure the Ad Unit Name your Ad Unit. Click Create Ad Unit.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791585972/6ed56ad0-def4-4532-9ef3-b91178304d50.jpeg)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791585972/6ed56ad0-def4-4532-9ef3-b91178304d50.jpeg align="left")
 
 ✅ 8: Copy Ad Unit ID You’ll now see your Ad Unit ID. Copy this — you’ll use it in your app where ads are displayed.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791587342/a22bd173-0ad1-40de-8cdf-f3d7ae5b3b84.jpeg)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791587342/a22bd173-0ad1-40de-8cdf-f3d7ae5b3b84.jpeg align="left")
 
 Now back to React Native Part
 
@@ -57,7 +60,7 @@ npm install react-native-google-mobile-ads@13.3.1
 
 Note: I struggle a lot with other version of SDK for Android so keep version for SDK as @13.3.1 for now. You can cross check installed version of sdk like;
 
-npm list react-native\-google-mobile-ads
+npm list react-native-google-mobile-ads
 
 Next, link the package:
 
@@ -71,7 +74,7 @@ If you have done these operations properly, we can now proceed to use it.
 
 ### Step 3: Configure Banner Ad From AdMob in App.js or in file of your choice.
 
-import React, { useEffect } from "react"; import { View, Text } from "react-native"; import { MobileAds } from "react-native-google-mobile-ads"; const App = () => { useEffect(() => { MobileAds().initialize(); }, \[\]); // Replace UnitId with whats shown on AdMob dashboard for ur Ad // This will allow us to load TestAd while in Debug mode and will switch to Production // mode when we create Release build const adUnitId = \_\_DEV\_\_ ? TestIds.BANNER : 'ca-app-pub-585495759xxxxxx/5424xxxxxx'; return (  <GAMBannerAd unitId={adUnitId} sizes={\[BannerAdSize.FULL\_BANNER\]} onAdFailedToLoad={(error) => { // if anything goes wrong with Ad load this will show you exact reason console.log('Ad Failed to Load',error.message,error.name); }} requestOptions = {{ requestNonPersonalizedAdsOnly: true }}/>  ); }; export default App;
+import React, { useEffect } from "react"; import { View, Text } from "react-native"; import { MobileAds } from "react-native-google-mobile-ads"; const App = () =&gt; { useEffect(() =&gt; { MobileAds().initialize(); }, \[\]); // Replace UnitId with whats shown on AdMob dashboard for ur Ad // This will allow us to load TestAd while in Debug mode and will switch to Production // mode when we create Release build const adUnitId = \_\_DEV\_\_ ? TestIds.BANNER : 'ca-app-pub-585495759xxxxxx/5424xxxxxx'; return ( &lt;GAMBannerAd unitId={adUnitId} sizes={\[BannerAdSize.FULL\_BANNER\]} onAdFailedToLoad={(error) =&gt; { // if anything goes wrong with Ad load this will show you exact reason console.log('Ad Failed to Load',error.message,error.name); }} requestOptions = {{ requestNonPersonalizedAdsOnly: true }}/&gt; ); }; export default App;
 
 💡 Tip: Use test ads during development to avoid policy violations.
 
@@ -95,8 +98,12 @@ npx react-native log-ios
 
 If all steps are followed above you will be able to see TestAd on simulator/device as below.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791588554/a9358300-b22f-43c2-86b6-91bd231f838d.jpeg)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1744791588554/a9358300-b22f-43c2-86b6-91bd231f838d.jpeg align="left")
 
 Other versions of Admob SDK were giving compilation error on Android so i explicitly stick to 13.3.1.
 
 *Originally published at* [*https://mhrrt.github.io*](https://mhrrt.github.io/)*.*
+
+<dl>
+<a href="https://www.amazon.com/gp/movers-and-shakers/ref=zg_bs_tab_bsms?tag=mhrrt-20" target="_blank">Amazon Movers and shakers
+</a></dl>
