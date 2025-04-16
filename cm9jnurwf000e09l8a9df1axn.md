@@ -127,7 +127,9 @@ public class LocalizationManager {
 }    
 ```
 
-Step 4: Make the Package Available for Other Apps 1: Open Package.swift and modify the target dependencies as:
+Step 4: Make the Package Available for Other Apps
+
+1: Open Package.swift and modify the target dependencies as:
 
 ```swift
 
@@ -216,6 +218,6 @@ class ViewController: UIViewController {
 }
 ```
 
-Thas’s how you can make you wrapper usable across multiple apps.
+That’s how you can make you wrapper usable across multiple apps.
 
 *Originally published at* [*https://mhrrt.github.io*](https://mhrrt.github.io/SwiftPackageLanguageTranslation/)*.*
